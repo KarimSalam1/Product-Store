@@ -4,7 +4,7 @@ import { connectDB } from "./config/db.js";
 import productRoute from "./routes/productRoute.js";
 import path from "path";
 import exp from "constants";
-const { job } = require("./cron");
+import { job } from "./cron";
 
 job.start();
 
