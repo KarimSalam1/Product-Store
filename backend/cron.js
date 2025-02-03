@@ -1,6 +1,5 @@
-
-import cron from "cron"
-import https from "https"
+import cron from "cron";
+import https from "https";
 
 const backendUrl = "https://product-store-g0hb.onrender.com"; // Your Render backend URL
 const job = new cron.CronJob("*/14 * * * *", function () {
@@ -23,7 +22,4 @@ const job = new cron.CronJob("*/14 * * * *", function () {
     });
 });
 
-// Export the cron job.
-module.exports = {
-  job,
-};
+export default job;
